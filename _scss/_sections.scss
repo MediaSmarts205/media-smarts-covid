@@ -324,3 +324,67 @@
     display: block;
   }
 }
+
+#section-about {
+  background-image: url('../assets/exports/about-campaign.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  .h1 {
+    color: var(--color-paper);
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .h2 {
+    margin-top: 0;
+  }
+
+  .mediasmarts-notag {
+    width: 164px;
+    height: auto;
+  }
+
+  .component__block--left,
+  .component__block--right {
+    width: 100%;
+    max-width: 36rem;
+  }
+}
+
+
+#campaign-partners {
+  justify-content: center;
+  align-items: center;
+
+  .h2 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-purple);
+  }
+
+  .component__block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partners-list {
+    flex-flow: row wrap;
+    align-items: center;
+
+    li {
+      margin: 2rem 4rem;
+    }
+  }
+
+  .backlink {
+    margin-top: 4rem;
+  }
+}

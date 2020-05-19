@@ -166,6 +166,101 @@ textarea {
   margin: 0;
 }
 
+// Typography
+a,
+.link {
+  background:
+   linear-gradient(
+     to bottom, var(--color-blue-light) 0%,
+     var(--color-blue-light) 100%
+   );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: var(--color-black);
+  text-decoration: none;
+  transition: background-size .2s;
+  padding: 0.25rem;
+
+  &:hover,
+  &:focus {
+    color: var(--color-paper);
+    background-size: 4px 100%;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.2em;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.h3 {
+  font-size: 1.8rem;
+}
+
+.h4 {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.h5 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.h6 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: oblique;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.55em;
+}
+
+
+blockquote {
+  @extend %fa-icon;
+  @extend .fas;
+
+  font-size: 1.6rem;
+  line-height: 1.2em;
+  padding-left: 2rem;
+  margin: 0 2rem 2rem -2rem;
+
+  &:before {
+    display: inline-block;
+    content: fa-content($fa-var-quote-left);
+    margin-left: -2rem;
+  }
+  &:after {
+    font-size: 0.8rem;
+    bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    content: fa-content($fa-var-quote-right);
+  }
+}
+
+.backlink-icon {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:after {
+    display: block;
+    content: fa-content($fa-var-arrow-circle-left);
+  }
+}
+
 // Utility
 .text-break {
   display: block;
@@ -182,6 +277,10 @@ textarea {
 
 .text-white {
   color: var(--color-paper);
+}
+
+.text-light {
+  font-weight: 200;
 }
 
 .text-align-left {
@@ -265,92 +364,5 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
-  }
-}
-
-
-// Typography
-a,
-.link {
-  background:
-   linear-gradient(
-     to bottom, var(--color-blue-light) 0%,
-     var(--color-blue-light) 100%
-   );
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 4px 4px;
-  color: var(--color-black);
-  text-decoration: none;
-  transition: background-size .2s;
-  padding: 0.25rem;
-
-  &:hover,
-  &:focus {
-    color: var(--color-paper);
-    background-size: 4px 100%;
-  }
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  line-height: 1.2em;
-  max-width: 55ch;
-}
-
-.h2 {
-  font-size: 2rem;
-}
-
-.h3 {
-  font-size: 1.8rem;
-}
-
-.h4 {
-  font-size: 1.4rem;
-  font-weight: 900;
-}
-
-.h5 {
-  font-size: 1.2rem;
-  font-weight: 900;
-}
-
-.h6 {
-  font-size: 1.2rem;
-  font-weight: 900;
-  font-style: oblique;
-}
-
-p {
-  font-size: 1.2rem;
-  line-height: 1.25em;
-}
-
-
-blockquote {
-  @extend %fa-icon;
-  @extend .fas;
-
-  font-size: 1.6rem;
-  line-height: 1.2em;
-  padding-left: 2rem;
-  margin: 0 2rem 2rem -2rem;
-
-  &:before {
-    display: inline-block;
-    content: fa-content($fa-var-quote-left);
-    margin-left: -2rem;
-  }
-  &:after {
-    font-size: 0.8rem;
-    bottom: 0.5rem;
-    position: relative;
-    display: inline-block;
-    content: fa-content($fa-var-quote-right);
   }
 }
