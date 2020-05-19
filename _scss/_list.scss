@@ -10,6 +10,22 @@
   flex-grow: 1;
 }
 
+.list--bullet {
+  list-style: disc;
+
+  li {
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+.list-number {
+  list-style: decimal;
+
+  li {
+    margin-left: 1rem;
+  }
+}
+
 .list--center {
   justify-content: center;
   align-items: center;
@@ -128,4 +144,22 @@
       }
     }
   }
+}
+
+// Definition list
+
+dl {
+
+}
+
+dt {
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+dd {
+  font-size: 1.2rem;
+  margin: 0 0 2rem;
+  padding: 0;
 }
