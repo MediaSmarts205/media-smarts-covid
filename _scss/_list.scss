@@ -1,0 +1,131 @@
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.list--flex {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  flex-grow: 1;
+}
+
+.list--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.list--right {
+  justify-content: flex-end;
+}
+
+.list--pad-half {
+  li {
+    padding: 0.5rem;
+  }
+}
+
+.list--menu {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100vw;
+}
+
+.menu-container {
+  max-height: 200px;
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  bottom: -2rem;
+  overflow: hidden;
+  padding-top: 10rem;
+
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-paper);
+    width: 200vw;
+    height: 100vw;
+    border-radius: 50%;
+    display: block;
+    top: 8rem;
+    left: -50vw;
+    z-index: 10;
+  }
+}
+
+.menu__item {
+  margin: 1rem;
+  position: relative;
+}
+
+.menu__item__link {
+  background: none;
+  color: var(--color-blue-dark);
+
+  &:hover,
+  &:focus {
+    color: var(--color-purple);
+    img {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+    }
+  }
+}
+
+.toggle-menu {
+  &:checked + .toggle-menu__label {
+    color: var(--color-purple);
+
+    + .toggle-menu__content {
+      height: 180px;
+      width: 320px;
+      bottom: 50px;
+      padding: 0 1rem;
+      max-height: none;
+      background-color: var(--color-blue-light);
+      -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+      box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+.toggle-menu__label {
+
+}
+
+.toggle-menu__content {
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 2rem;
+
+  li {
+    margin: 0.25rem;
+  }
+
+  a {
+    font-size: 1rem;
+    color: var(--color-paper);
+    transition: all .4s ease;
+
+    &:focus,
+    &:hover {
+      strong {
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}

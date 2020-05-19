@@ -1,0 +1,19 @@
+.site-header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: $padding;
+  background-image: url('https://mediasmarts.ca/sites/mediasmarts/themes/mediasmarts/images/backgrounds/header_bgr.png');
+  background-position: right -50px;
+  background-repeat: no-repeat;
+}
+
+.site-header__logo {
+  background: none;
+}
+
+.site-header__social-list {
+  width: 100%;
+  max-width: 10rem;
+}

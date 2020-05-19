@@ -1,0 +1,30 @@
+.component {
+
+}
+
+.component--section {
+  width: calc(100vw - 4rem);
+  height: calc(100vh - 4rem);
+  display: flex;
+  padding: 2rem;
+}
+
+.component--section-1col {
+  flex-flow: row wrap;
+  .component__block {
+    width: calc(100% - 4rem);
+  }
+}
+
+.component--section-2col {
+}
+
+.component--section-revers {
+  flex-flow: row-reverse;
+}
+
+.component__block--50 {
+  padding: 2rem;
+  max-width: calc(50% - 4rem);
+  width: 100%;
+}
