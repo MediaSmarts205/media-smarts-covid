@@ -23,6 +23,12 @@
   flex-flow: row-reverse;
 }
 
+.component__block--felx-column {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .component__block--50 {
   padding: 2rem;
   max-width: calc(50% - 4rem);
