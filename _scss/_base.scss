@@ -64,8 +64,6 @@ img,
 svg,
 video {
   vertical-align: middle;
-  width: 100%;
-  height: auto;
 }
 
 /*
@@ -167,7 +165,6 @@ textarea {
 }
 
 // Typography
-a,
 .link {
   background:
    linear-gradient(
@@ -271,8 +268,20 @@ blockquote {
   color: var(--color-yellow);
 }
 
+.text-blue {
+  color: var(--color-blue);
+}
+
+.text-blue-light {
+  color: var(--color-blue-light);
+}
+
 .text-blue-dark {
   color: var(--color-blue-dark);
+}
+
+.text-purple {
+  color: var(--color-purple);
 }
 
 .text-white {
@@ -281,6 +290,10 @@ blockquote {
 
 .text-light {
   font-weight: 200;
+}
+
+.text-bold {
+  font-weight: 900;
 }
 
 .text-align-left {
@@ -293,6 +306,10 @@ blockquote {
 
 .text-align-center {
   text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .remove-background {

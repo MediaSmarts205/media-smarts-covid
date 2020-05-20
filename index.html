@@ -85,7 +85,7 @@
           <img src="assets/exports/header-image.png" alt="" />
         </div>
         <div id='section-intro-3' class="component__block">
-          <a href="#section-check-first">
+          <a class="link" href="#section-check-first">
             Here's how
             <img src="assets/exports/arrow-down.png" alt="" />
           </a>
@@ -133,8 +133,8 @@
                 <img id="image-check-authorities" src="assets/exports/check-authorities.png" alt="" />
                 <p>
                   <span class="text-break text-blue-dark"><strong>Check</strong></span>
-                  <span class="text-break"><a href="https://www.canada.ca/en/public-health.html">what public health authorities</a></span>
-                  <span class="text-break">and <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">government</a> are saying.</span>
+                  <span class="text-break"><a class="link" href="https://www.canada.ca/en/public-health.html">what public health authorities</a></span>
+                  <span class="text-break">and <a class="link" href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">government</a> are saying.</span>
                 </p>
                 <img id="image-blue-arrow" src="assets/exports/blue-arrow.png" alt="" />
               </li>
@@ -175,7 +175,7 @@
             Help us spread the word!
           </h3>
           <p>
-            Help yourself to these <a href="#">shareable images and videos</a>
+            Help yourself to these <a class="link" href="#">shareable images and videos</a>
             and help us spread the word.
           </p>
         </div>
@@ -508,48 +508,62 @@
                 <span class="popup__icon"></span>
               </label>
               <div id="popup-what-can-i-do" class="popup__container">
-                <div class="component__block">
-                  <h2 class="h2">
-                    I want to help. What can I do?
-                  </h2>
-                  <p>
-                    Researchers found that during a pandemic reducing bad
-                    information by just 10% has a signiﬁcant impact on how severe
-                    the pandemic is. You can make a real difference:
-                  </p>
-                  <ol>
-                    <li>
-                      Share responsibly. Check ﬁrst, share after.
-                    </li>
-                    <li>
-                      Call out false content when you see it.
-                    </li>
-                    <li>
-                      Help us educate as many people as possible about the dangers
-                      of misinformation.
-                    </li>
-                  </ol>
+                <div id="popup-what-can-i-do__pt-1" class="component__block">
+                  <div class="component__block component__block--left">
+                    <h2 class="h2">
+                      <span class="text-break">I want to</span>
+                      <span class="text-break">help. What</span>
+                      <span class="text-break">can I do?</span>
+                    </h2>
+                    <p>
+                      Researchers found that during a pandemic reducing bad
+                      information by just 10% has a signiﬁcant impact on how severe
+                      the pandemic is.
+                    </p>
+                  </div>
+                  <div class="component__block component__block--right">
+                    <h3 class="h3">
+                      You can make a real difference:
+                    </h3>
+                    <ol>
+                      <li>
+                        <span class="text-break">Share responsibly.</span>
+                        <span class="text-break">Check ﬁrst, share after.</span>
+                      </li>
+                      <li>
+                        <span class="text-break">Call out false content</span>
+                        <span class="text-break">when you see it.</span>
+                      </li>
+                      <li>
+                        <span class="text-break">Help us educate as many</span>
+                        <span class="text-break">people as possible about the</span>
+                        <span class="text-break">dangers of misinformation.</span>
+                      </li>
+                    </ol>
+                  </div>'
                 </div>
 
-                <div class="component__block component__block--50">
-                  <h3 class="h3">
-                    Help us spread the word!
-                  </h3>
-                  <p>
-                    Help yourself to these <a href="#">shareable images and videos</a>
-                    and help us spread the word.
-                  </p>
-                </div>
-                <div class="component__block  component__block--50">
-                  <h3 class="h3">
-                    <span class="text-break">Are you a content creator?</span>
-                    <span class="text-break">Download the share button and use it on your site</span>
-                  </h3>
-                  <p>
-                    One of the best ways to promote responsible sharing is when people
-                    are in the actual process of sharing. Our custom share buttons
-                    provide an unobtrusive reminder to check first, share after.
-                  </p>
+                <div id="popup-what-can-i-do__pt-2" class="component__block">
+                  <div class="component__block component__block--left">
+                    <h3 class="h3">
+                      Help us spread the word!
+                    </h3>
+                    <p>
+                      Help yourself to these <a class="link" href="#">shareable images and videos</a>
+                      and help us spread the word.
+                    </p>
+                  </div>
+                  <div class="component__block  component__block--right">
+                    <h3 class="h3">
+                      <span class="text-break">Are you a content creator?</span>
+                      <span class="text-break">Download the share button and use it on your site</span>
+                    </h3>
+                    <p>
+                      One of the best ways to promote responsible sharing is when people
+                      are in the actual process of sharing. Our custom share buttons
+                      provide an unobtrusive reminder to check first, share after.
+                    </p>
+                  </div>
                 </div>
               </div>
             </li>
@@ -559,24 +573,43 @@
               <label for="search-engine" class="popup__toggle-label text-align-center">
                 <span class="text-break section__line-one">I need a search engine</span>
                 <span class="text-break section__line-two">with resources</span>
-                <span class="popup__icon"></span>
+                <span class="popup__icon popup__icon--bg-white"></span>
               </label>
               <div id="popup-search-engine" class="popup__container">
                 <div class="component__block">
                   <h2 class="h2">
-                    I need a search engine with resources.
+                    <span class="text-break">I need a search engine</span>
+                    <span class="text-break">with resources.</span>
                   </h2>
-                  <p>
+                  <h3 class="h3">
                     Cut through the noise. Get just the good stuff.
-                  </p>
+                  </h3>
                   <p>
                     Search engines are wonderful at ﬁnding a ton information but
                     they definitely don’t fact check every source. So, we did it
                     for you! This search engine limits its ﬁndings to trusted
                     expert sources. Use it to ﬁnd trusted content. [embedded
                     custom Google search bar:
-                    http://bit.ly/public-health-canada]
                   </p>
+
+                  <ul id="search-list" class="list list--flex">
+                    <li>
+                      <h4 class="h4 text-align-center">
+                        <span class="text-break">Search national and provincial</span>
+                        <span class="text-break">public health agencies</span>
+                      </h4>
+                      <script async src="https://cse.google.com/cse.js?cx=009843066196008418578:dqzxstjbauw"></script>
+                      <div class="gcse-search"></div>
+                    </li>
+
+                    <li>
+                      <h4 class="h4 text-align-center">
+                        Search reputable news outlets
+                      </h4>
+                      <script async src="https://cse.google.com/cse.js?cx=009843066196008418578:x4odwiy9ony"></script>
+                      <div class="gcse-search"></div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </li>
@@ -586,13 +619,434 @@
               <label for="deep-dive" class="popup__toggle-label text-align-center">
                 <span class="text-break section__line-one">I want to do a</span>
                 <span class="text-break section__line-two">deep dive</span>
-                <span class="popup__icon"></span>
+                <span class="popup__icon popup__icon--bg-white"></span>
               </label>
               <div id="popup-deep-dive" class="popup__container">
-                <div class="component__block">
-                  I want to do a deep dive.
-                  Educators, academics and those who just want to learn more can do it right here.
-                  We’re proud to partner with Timothy Caulﬁeld and the University of Alberta’s Health and Law Institute to provide these additional resources.  [links to separate page]
+                <div id="popup-deep-dive-content" class="component__block">
+                  <div class="popup-deep-dive__section-intro">
+                    <h2 class="title">
+                      <span class="text-break">I want</span>
+                      <span class="text-break">to do a</span>
+                      <span class="text-break">deep dive.</span>
+                    </h2>
+                    <h3 class="sub-title">
+                      <span class="text-break">Educators, academics and those who just</span>
+                      <span class="text-break">want to learn more can do it right here.</span>
+                    </h3>
+                  </div>
+                  <div class="popup-deep-dive__section-content">
+                    <h3 class="h3">
+                      We’re proud to partner with Timothy Caulﬁeld and the
+                      University of Alberta’s Health and Law Institute to
+                      provide these additional resources.
+                    </h3>
+
+                    <h4 class="h4">
+                      <span class="text-break text-blue-light">Fighting misinformation:</span>
+                      <span class="text-break">Why pausing before you share really works!</span>
+                    </h4>
+
+                    <p>
+                      Dealing with the misinformation surrounding COVID-19 will
+                      require us to come at it from every possible angle. We
+                      need trusted voices to provide strong, clear and sharable
+                      counter-messaging on social media. And we need regulators
+                      to go after those who are deliberately spreading
+                      misinformation for personal gain. But perhaps the most
+                      important strategy will be to empower people with the
+                      tools necessary to be more critical consumers of
+                      information. This should include teaching both critical
+                      thinking skills and media literacy, such as inoculating
+                      (or “pre-bunking”) people against misinformation.
+                    </p>
+
+                    <p>
+                      A simple and effective “pre-bunk” approach is to remind
+                      social media users to pause and think about accuracy
+                      before sharing. Research has found that people want to be
+                      accurate and want to share only factual material. Most
+                      users do not fall for or share misinformation due to a
+                      personal agenda or, even, a partisan bias. As such, if we
+                      can nudge people to think about accuracy prior to sharing
+                      social media content (which is the goal of the
+                      MediaSmarts’ #CheckThenShare campaign!) we could have a
+                      significant impact on the spread of misinformation. A 2020
+                      study found that simply asking people to consider why a
+                      headline might be true or false – which forced research
+                      participants to pause and think about accuracy – “can
+                      reduce shares of false information.” And another recent
+                      study that specifically looked at misinformation in the
+                      context of the coronavirus found this same effect.
+                    </p>
+
+                    <p>
+                      Pausing and thinking about accuracy works!
+                    </p>
+
+                    <hr />
+
+                    <h4 class="h4">
+                      <span class="text-break text-blue-light">Science evolves!</span>
+                      <span class="text-break">And so does (and should) health policy and the scientific consensus</span>
+                    </h4>
+
+                    <p>
+                      Studies have shown that communicating the scientific
+                      consensus on a topic can be a helpful strategy in the
+                      fight against misinformation. For example, a 2015 study
+                      found that “emphasizing the medical consensus about
+                      (childhood) vaccine safety is likely to be an effective
+                      pro-vaccine message..” And the strategy has been found to
+                      work, at least to some degree, for other controversial
+                      issues, such as the science of climate change. This
+                      approach is especially effective if it is utilized by
+                      trusted voices, such as healthcare professionals,
+                      scientific experts and public health authorities.
+                    </p>
+                    <p>
+                      But what happens when both the science is in constant flux
+                      and trust in relevant institutions is eroding? What
+                      happens when the scientific consensus seems to be quickly
+                      evolving and some of the relevant science is less-than
+                      robust, as it is with the current pandemic?
+                    </p>
+                    <p>
+                      In such times it is important to be explicit about the
+                      ambiguities of the evidence. Indeed, there is some
+                      evidence that being transparent about uncertainties can
+                      actually heighten credibility, trust and public
+                      understanding. Perhaps more importantly, we should view
+                      these situations of uncertainty as an opportunity to
+                      reflect on the nature of the scientific process. We need
+                      to remind others (and ourselves!) that “science” is not an
+                      immutable list of facts. It isn’t an institution or, even,
+                      a particular authoritative expert. It is a process. It is
+                      uncertain. And as such, the conclusions and
+                      recommendations that are informed by science will (and
+                      should!) change and evolve.
+                    </p>
+                    <p>
+                      When science-informed decision makers change their mind
+                      due to new evidence, they aren’t flip-flopping, they’re
+                      doing their job!
+                    </p>
+
+                    <hr />
+
+                    <h3 class="h2 text-bold text-align-center text-uppercase text-purple">
+                        Further reading.
+                    </h3>
+                    <p class="text-align-center">
+                      Researchers, academics and journalists across the globe
+                      are working hard to unpack the complicated issue of
+                      misinformation, especially as it relates to COVID-19.
+                      We’ve compiled the latest articles for further reading on
+                      the subject, from the reasons why misinformation about the
+                      virus is spreading, to how best to respond to false
+                      information about COVID-19.
+                    </p>
+
+                    <hr />
+
+                    <h4 class="h4">
+                      Verifying health information
+                    </h4>
+                    <dl>
+                      <dt class="text-blue-light">
+                        “Why the Coronavirus is so Confusing.” Ed Yong. The
+                        Atlantic, April 29 2020.
+                      </dt>
+                      <dd>
+                        <p>
+                        “‘Our understanding oscillates at first, but converges
+                        on an answer,’ says Natalie Dean, a statistician at the
+                        University of Florida. ‘That’s the normal scientific
+                        process, but it looks jarring to people who aren’t used
+                        to it.’”
+                        </p>
+                      </dd>
+                      <dt class="text-blue-light">
+                        “Why Coronavirus Conspiracy Theories Flourish And Why It
+                        Matters.” Max Fisher, The New York Times, April 28 2020.
+                      </dt>
+                      <dd>
+                        <p>
+                        “‘We’ve faced pandemics before,” said Graham Brookie,
+                        who directs the Atlantic Council’s Digital Forensic
+                        Research Lab. “We haven’t faced a pandemic at a time
+                        when humans are as connected and have as much access to
+                        information as they do now.’”
+                        </p>
+                      </dd>
+                      <dt class="text-blue-light">
+                        “COVID 19 has intensified concerns about misinformation.
+                        Here’s what our past research says about these issues.”
+                        J. Scott Brennen and Rasmus Kleis Neilsen, Reuters News
+                        Institute, March 16 2020. 
+                      </dt>
+                      <dd>
+                        <p>
+                        “This post provides a short overview of this research
+                        with seven highlights that can help us understand how
+                        people navigate information (and misinformation) and
+                        what role journalism and news can play in a crisis like
+                        the current pandemic.” 
+                        </p>
+                      </dd>
+                      <dt class="text-blue-light">
+                        “Who Benefits from Health Misinformation?” Erin
+                        McAweeny, Data & Society, March 30 2020
+                      </dt>
+                      <dd>
+                        <p>
+                        “Different groups with different motives are exploiting
+                        the COVID-19 pandemic in different ways.”
+                        </p>
+                      </dd>
+
+                      <hr />
+
+                      <h4 class="h4">
+                        Communicating good information
+                      </h4>
+                      <dl>
+                        <dt class="text-blue-light">
+                          “You Can Help Slow the Virus if You Talk About it
+                          Accurately Online.” Emily Falk and Molly Crockett,
+                          Washington Post, April 28 2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “Social norms are powerful, and ideas are contagious
+                            — meaning we each can play a role in spreading the
+                            word.“
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “Vaccines Are Critical. Here’s How You Can Help Spread
+                          the Word.” American Society for Microbiology, April 27
+                          2020. 
+                        </dt>
+                        <dd>
+                          <p>
+                            “If you’re thinking about discussing vaccines with
+                            friends and family, or on social media, it helps to
+                            have an understanding of some of the varied reasons
+                            people may be hesitant about vaccines.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “Covering the Coronavirus Epidemic Effectively Without
+                          Spreading Misinformation.” Laura Helmuth, The Open
+                          Notebook, March 2 2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “Reporters who cover this beat learn to evaluate
+                            evidence, decipher jargon and statistics, find
+                            reliable experts, and humanize intimidating stories.
+                            Here are some tips to keep in mind.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “How Not to Lose the COVID-19 Communication War.”
+                          Dietram A. Scheufele, Nicole M. Krause, Isabelle
+                          Freiling, and Dominique Brossard. Slate, April 17
+                          2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “The seductively simple directive to be “accurate,”
+                            which lies at the heart of science communication,
+                            obscures the reality that accuracy is a tenuous
+                            notion during a crisis such as this, in which
+                            uncertainty reigns.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “Want To Avoid Spreading Coronavirus Misinformation?
+                          Think Like A Science Journalist.” Rebecca Leber,
+                          Mother Jones, March 18 2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “No one wants to spread bad information—but for
+                            non-scientists, it can be hard to distinguish facts
+                            from rumors.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “Going viral: How to boost the spread of coronavirus
+                          science on social media.” Samantha Yammine, Nature,
+                          May 5 2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “Simply spewing scientific facts from a soapbox
+                            isn’t enough: research shows that it’s more
+                            important to start a dialogue.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “30 Tips to Message COVID-19.” Pathos Labs.
+                        </dt>
+                        <dd>
+                          <p>
+                          “To help influencers channel this power to fight
+                          COVID-19, we researched and tested the best messaging
+                          tactics for encouraging compliance with public health
+                          guidelines.”
+                          </p>
+                        </dd>
+                      </dl>
+
+                      <h4 class="h4">
+                        Responding to bad information
+                      </h4>
+                      <dl>
+                        <dt class="text-blue-light">
+                          “How to Talk About the Coronavirus to Friends and
+                          Family.” Liz Neeley, The Atlantic, May 31 2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “You are already an influential source of
+                            information for the people closest to you. Even if
+                            they vehemently disagree with you, your family and
+                            friends likely pay more attention to you, and think
+                            more highly of you, than do people whom you’ve never
+                            met.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “How to Talk About Coronavirus Misinformation with the
+                          Older People in Your Life.” Rachel Kraus, Mashable,
+                          March 31 2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “Older people are ‘particularly targeted for
+                            misinformation’ because they tend to have more
+                            money, more civic engagement, more free time, and
+                            less experience with technology.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “Americans are Fighting Coronavirus Misinformation on
+                          Social Media.” Leticia Bode and Emily Vraga,
+                          Washington Post, May 7 2020.
+                        </dt>
+                        <dd>
+                          <p>
+                            “A majority of Americans agree that correction is
+                            important: 68 percent agree people should respond
+                            when they see someone sharing misinformation, and 67
+                            percent agree that addressing misinformation on
+                            social media is everyone’s responsibility.”
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          “What Role Should Newsrooms Play in Debunking COVID-19
+                          Misinformation?” Claire Wardle, NiemanReports, April 8
+                          2020. 
+                        </dt>
+                        <dd>
+                          <p>
+                            “If you debunk a rumor too early, you can give it
+                            oxygen. If you leave the debunk too late, the
+                            falsehood and conspiracy takes hold, and it’s almost
+                            impossible to slow down its spread or to convince
+                            people it’s wrong.”
+                          </p>
+                        </dd>
+                      </dl>
+
+                      <hr />
+
+                      <h4 class="h4">
+                        Our stuff
+                      </h4>
+                      <dl>
+                        <dt class="text-blue-light">
+                          Authenticating Information
+                        </dt>
+                        <dd>
+                          <p>
+                            The internet is a never-ending source of
+                            information. But how do you know if that information
+                            is true, unbiased and relevant?
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          Verifying Online News
+                        </dt>
+                        <dd>
+                          <p>
+                            Most of us turn to online sources for news, but news
+                            stories are one of the hardest things to verify.
+                            It’s important to pause for a moment when you’re
+                            about to pass a news story or some other urgent
+                            information on to your friends, and to make sure
+                            that it’s accurate and up-to-date.
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          Finding and Evaluating Science and Health Information
+                        </dt>
+                        <dd>
+                          <p>
+                            Two of the most important kinds of information we
+                            look for online are about health and science. This
+                            section looks at how we get news and information
+                            about health and science topics, types of
+                            misinformation that are particularly common in those
+                            subjects, and steps we can take to determine how
+                            reliable a source or claim is.
+                          </p>
+                        </dd>
+                        <dt class="text-blue-light">
+                          Ethics of Sharing Information Online
+                        </dt>
+                        <dd>
+                          <p>
+                            Thanks to the internet, today we’re not just
+                            consumers of news but broadcasters as well – and our
+                            friends and families are counting on us to only
+                            share accurate, reliable information.
+                          </p>
+                        </dd>
+                      </dl>
+
+                      <h3 class="h3">
+                        Practical tools
+                      </h3>
+                      <ul class="list list--bullet">
+                        <li>
+                          <p>
+                            <a href="https://mediasmarts.ca/break-fake">Break the Fake:</a> Fun fact-checking
+                            videos, tips and quizzes for all ages (featuring the
+                            house hippo!)
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <a href="https://mediasmarts.ca/digital-media-literacy/digital-issues/authenticating-information/reality-check">Reality Check:</a> Info and activities
+                            for teens and adults to learn more about verifying
+                            info online
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <a href="https://mediasmarts.ca/search/break the fake?f%5B0%5D=type%3Alesson_plan">Lesson plans and games for teachers</a>
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                            <a href="">Articles and resources for parents</a>
+                          </p>
+                        </li>
+                      </ul>
+                  </div>
                 </div>
               </div>
             </li>
@@ -601,17 +1055,17 @@
         <div class="component__block menu-container">
           <ul class="list list--menu">
             <li class="menu__item">
-              <a href="about.html" class="menu__item__link">
+              <a href="about.html" class="link menu__item__link">
                 About the Campaign
               </a>
             </li>
             <li class="menu__item">
-              <a href="about.html#campaign-partners" class="menu__item__link">
+              <a href="about.html#campaign-partners" class="link menu__item__link">
                 Campaign Partners
               </a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__item__link">
+              <a href="" class="link menu__item__link">
                 <img class="break-fake-logo" src="assets/exports/break-fake-logo.png" alt="" />
               </a>
             </li>
