@@ -6,7 +6,7 @@
 .list--flex {
   list-style: none;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   flex-grow: 1;
 }
 
@@ -53,25 +53,27 @@
 }
 
 .menu-container {
-  max-height: 200px;
-  height: 100%;
-  max-width: 100%;
-  position: absolute;
-  bottom: -2rem;
-  overflow: hidden;
-  padding-top: 10rem;
-
-  &:after {
-    content: "";
+  @media(min-width: 1200px) {
     position: absolute;
-    background-color: var(--color-paper);
-    width: 200vw;
-    height: 100vw;
-    border-radius: 50%;
-    display: block;
-    top: 8rem;
-    left: -50vw;
-    z-index: 10;
+    max-height: 200px;
+    height: 100%;
+    max-width: 100%;
+    bottom: -2rem;
+    overflow: hidden;
+    padding-top: 10rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: var(--color-paper);
+      width: 200vw;
+      height: 100vw;
+      border-radius: 50%;
+      display: block;
+      top: 8rem;
+      left: -50vw;
+      z-index: 10;
+    }
   }
 }
 

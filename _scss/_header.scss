@@ -1,6 +1,7 @@
 .site-header {
+  width: 100%;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
   padding: $padding;
@@ -11,11 +12,20 @@
 
 .site-header__logo {
   background: none;
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 .site-header__social-list {
-  width: 100%;
-  max-width: 10rem;
+
+  @media(min-width: 768px) {
+    width: 100%;
+    max-width: 10rem;
+  }
 }
 
 .lang-link {

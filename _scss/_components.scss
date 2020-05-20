@@ -10,9 +10,20 @@
 }
 
 .component--section-1col {
-  flex-flow: row wrap;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  @media(min-width: 768px) {
+    flex-flow: row wrap;
+  }
+
   .component__block {
-    width: calc(100% - 4rem);
+    width: 100%;
+
+    @media(min-width: 768px) {
+      width: calc(100% - 4rem);
+    }
   }
 }
 
