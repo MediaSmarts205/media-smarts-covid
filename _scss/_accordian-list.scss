@@ -22,11 +22,16 @@
     transition: all .4s ease;
 
     background-color: var(--color-paper);
-    border-radius: 4rem;
-    padding: 4rem;
+    border-radius: 1rem;
+    padding: 1rem;
     -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
     box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+
+    @media(min-width: 768px) {
+      border-radius: 4rem;
+      padding: 4rem;
+    }
   }
 
   &:hover + .toggle__label,

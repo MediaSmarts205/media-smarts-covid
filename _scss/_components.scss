@@ -41,7 +41,10 @@
 }
 
 .component__block--50 {
-  padding: 2rem;
-  max-width: calc(50% - 4rem);
-  width: 100%;
+
+  @media(min-width: 768px) {
+    padding: 2rem;
+    max-width: calc(50% - 4rem);
+    width: 100%;
+  }
 }
