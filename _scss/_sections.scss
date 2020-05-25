@@ -121,20 +121,11 @@
       border-radius: 0 0 50% 50%;
       transition: all .2s ease-in-out;
       position: relative;
-      background:
-       linear-gradient(
-         to bottom, rgba(0,0,0,0) 0%,
-         rgba(0,0,0,0.9) 100%
-       );
-       background-position: 0 100%;
-       background-repeat: repeat-x;
-       background-size: 4px 4px;
+      background: none;
 
       &:hover,
       &:focus {
-        padding-top: 2rem;
-        background-size: 4px 100%;
-
+        color: var(--color-black);
         img {
           top: 3.5rem;
         }
@@ -516,7 +507,7 @@
 .footer {
   position: relative;
   background-color: var(--color-paper);
-  z-index: 100;
+  z-index: map-get($z-index, footer);
   padding: 6rem 2rem 0;
 
   .h2 {
@@ -730,12 +721,14 @@
   }
 
   #search-list {
+    width: 100%;
+
     li {
       display: flex;
       flex-flow: column;
-      justify-content: flex-end;
+      justify-content: center;
+      align-content: center;
       width: 100%;
-      max-width: 50%;
 
       .h4 {
         font-size: 0.8rem;
@@ -750,12 +743,89 @@
 
   #popup-deep-dive-content {
     width: 101%;
-    height: 600px;
+    height: 100vh;
     overflow-y: scroll;
     background-image: url('../assets/exports/deep-dive-background.png');
     background-size: 100% auto;
     background-position: top left;
     background-repeat: no-repeat;
+
+    .title {
+      @extend .h1;
+
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1em;
+      color: var(--color-paper);
+      text-transform: uppercase;
+      text-align: left;
+      margin: 0;
+
+      @media (min-width: 1200px) {
+        font-size: 5rem;
+      }
+
+      .fr & {
+        max-width: 14ch;
+      }
+    }
+
+    .sub-title {
+      @extend .h3;
+
+      font-size: 1.2rem;
+      font-weight: 200;
+      line-height: 1.5em;
+      text-align: left;
+      margin: 0;
+
+      .fr & {
+        max-width: 30ch;
+      }
+    }
+  }
+
+  .popup-deep-dive__section-intro {
+    margin: 15% 0 0 15%;
+  }
+
+  .popup-deep-dive__section-content {
+    background-color: var(--color-paper);
+    padding: 1rem 8rem 4rem;
+    margin-top: -2rem;
+  }
+}
+
+#section-deep-dive {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0;
+
+  #deep-dive__section-intro {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 100vw;
+    max-width: calc(100% - 4rem);
+    height: auto;
+    padding: 2rem;
+    position: relative;
+
+    background-image: url('../assets/exports/deep-dive-background.png');
+    background-size: 100% auto;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    @media (min-width: 1200px) {
+      min-height: 1280px;
+    }
+
+    .container {
+      margin: 15% 0 0 15%;
+    }
 
     .title {
       font-size: 3rem;
@@ -765,6 +835,14 @@
       text-transform: uppercase;
       text-align: left;
       margin: 0;
+
+      .fr & {
+        max-width: 15ch;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 5rem;
+      }
     }
 
     .sub-title {
@@ -773,17 +851,53 @@
       line-height: 1.5em;
       text-align: left;
       margin: 0;
+      max-width: 240px;
+
+      .fr & {
+        max-width: 30ch;
+      }
+
+      .text-break {
+        display: inline;
+      }
+
+      @media (min-width: 1200px) {
+        min-width: 100%;
+
+        .fr & {
+          min-width: auto;
+          max-width: 55ch;
+        }
+
+        .text-break {
+          display: block;
+        }
+      }
     }
   }
 
-  .popup-deep-dive__section-intro {
-    max-width: 25rem;
-    margin: 8rem 0 8rem 8rem;
-  }
+  #deep-dive-content {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: -600px;
+    z-index: map-get($z-index, modal);
 
-  .popup-deep-dive__section-content {
-    background-color: var(--color-paper);
-    padding: 1rem 8rem 4rem;
-    margin-top: -2rem;
+    .deep-dive__section-content {
+      background: var(--color-paper);
+      -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+      box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+
+      max-width: 960px;
+      padding: 2rem 6rem 2rem 4rem;
+      margin-left: 15%;
+
+      p {
+        font-size: 1.25rem;
+        line-height: 1.6em;
+      }
+    }
   }
 }

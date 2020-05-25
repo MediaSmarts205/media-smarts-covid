@@ -1,4 +1,3 @@
-
 // Spacing
 $padding: 2rem;
 
@@ -19,3 +18,20 @@ $padding: 2rem;
 
 // fontawesome
 $fa-font-path: "../assets/fontawesome-free-5.13.0-web/webfonts";
+
+// fontfamily
+$font-display: Arial Black, Arial Bold, Gadget, sans-serif; 
+$font-body: Arial, Helvetica, sans-serif;
+
+$z-index: (
+  admin              : 500,
+  modal-controls     : 310,
+  modal              : 300,
+  header             : 200,
+  navigation-top     : 150,
+  navigation         : 100,
+  footer             : 90,
+  bellow-parent      : -1,
+);
+// usage example :: z-index: map-get($z-index, navigation);
+// source :: https://jonsuh.com/blog/organizing-z-index-with-sass/

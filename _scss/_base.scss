@@ -15,7 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-body;
 }
 
 /*
@@ -192,6 +192,7 @@ textarea {
 .h4,
 .h5,
 .h6 {
+  font-family: $font-display;
   line-height: 1.2em;
 }
 
@@ -226,20 +227,22 @@ p {
 
 
 blockquote {
-  @extend %fa-icon;
-  @extend .fas;
-
+  font-family: $font-body;
   font-size: 1.6rem;
   line-height: 1.2em;
   padding-left: 2rem;
   margin: 0 2rem 2rem -2rem;
 
   &:before {
+    @extend %fa-icon;
+    @extend .fas;
     display: inline-block;
     content: fa-content($fa-var-quote-left);
     margin-left: -2rem;
   }
   &:after {
+    @extend %fa-icon;
+    @extend .fas;
     font-size: 0.8rem;
     bottom: 0.5rem;
     position: relative;
@@ -264,6 +267,10 @@ blockquote {
     display: block;
     clear: both;
   }
+}
+
+.text-hyphen-manual {
+  hyphens: manual;
 }
 
 .text-yellow {
@@ -336,6 +343,10 @@ blockquote {
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+
+.margin-top-4rem {
+  margin-top: 4rem;
 }
 
 /* ==========================================================================
