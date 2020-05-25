@@ -261,6 +261,10 @@ blockquote {
   }
 }
 
+input + label {
+  cursor: pointer;
+}
+
 // Utility
 .text-break {
   @media(min-width: 640px) {
