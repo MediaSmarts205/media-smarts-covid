@@ -1,10 +1,10 @@
 // Intro section
 #section-intro {
-  width: calc(100% - 2rem);
+  width: 100%;
   flex-flow: column;
   background-color: var(--color-blue);
   position: relative;
-  padding: 2rem;
+  padding: 1rem;
   height: auto;
 
   @media(min-width: 768px) {
@@ -106,7 +106,6 @@
     z-index: +1;
 
     .link {
-      box-sizing: border-box;
       color: var(--color-paper);
       font-size: 1.2rem;
       font-weight: 900;
@@ -214,7 +213,7 @@
       align-items: center;
 
       p {
-        padding: 0 0 0 2rem;
+        padding: 0;
       }
 
       @media (min-width: 1200px) {
@@ -270,7 +269,7 @@
       }
 
       p {
-        padding: 0 0 0 2rem;
+        padding: 0;
       }
 
       @media (min-width: 1200px) {
@@ -322,7 +321,7 @@
       align-items: center;
 
       p {
-        padding: 0 0 0 2rem;
+        padding: 0;
       }
 
       @media (min-width: 1200px) {
@@ -378,7 +377,7 @@
       }
 
       p {
-        padding: 0 2rem 0 0;
+        padding: 0;
       }
 
       @media (min-width: 1200px) {
@@ -415,12 +414,13 @@
 #section-share-this {
   flex-flow: column;
   height: auto;
-  max-width: calc(100% - 40vw);
-  padding: 2rem 20vw;
+  max-width: 100%;
+  padding: 1rem;
   justify-content: space-around;
   background-color: #F4F4F4;
 
   @media (min-width: 768px) {
+    max-width: 100%;
     flex-flow: row wrap;
     align-items: flex-start;
   }
@@ -483,10 +483,13 @@
   }
 
   .h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1.25em;
-    font-weight: 200;
     text-align: center;
+
+    @media(min-width: 768px) {
+      font-size: 3.5rem;
+    }
   }
 
   .section__line-one {
@@ -662,7 +665,7 @@
 
     .component__block--left {
       width: 100%;
-      max-width: calc(50% - 4rem);
+      max-width: 50%;
       padding: 2rem;
 
       p {
@@ -673,7 +676,7 @@
 
     .component__block--right {
       width: 100%;
-      max-width: calc(50% - 4rem);
+      max-width: 50%;
       padding: 2rem;
 
       p {
@@ -810,7 +813,7 @@
     flex-flow: column;
     justify-content: flex-start;
     width: 100vw;
-    max-width: calc(100% - 4rem);
+    max-width: 100%;
     height: auto;
     padding: 2rem;
     position: relative;

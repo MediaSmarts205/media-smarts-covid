@@ -1,5 +1,5 @@
 .site-header {
-  width: calc(100% - 2rem);
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
 
   @media(min-width: 768px) {
-    width: calc(100% - 4rem);
+    width: 100%;
   }
 }
 

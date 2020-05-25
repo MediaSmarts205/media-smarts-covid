@@ -4,10 +4,14 @@
 }
 
 .component--section {
-  width: calc(100vw - 4rem);
+  width: 100vw;
   height: calc(100vh - 4rem);
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
+
+  @media(min-width: 768px) {
+    padding: 2rem;
+  }
 }
 
 .component--section-1col {
@@ -21,10 +25,6 @@
 
   .component__block {
     width: 100%;
-
-    @media(min-width: 768px) {
-      width: calc(100% - 4rem);
-    }
   }
 }
 
@@ -45,7 +45,7 @@
 
   @media(min-width: 768px) {
     padding: 2rem;
-    max-width: calc(50% - 4rem);
+    max-width: 50%;
     width: 100%;
   }
 }

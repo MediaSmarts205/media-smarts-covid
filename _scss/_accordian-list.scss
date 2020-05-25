@@ -2,7 +2,11 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  max-width: 900px;
+  max-width: 90vw;
+
+  @media (min-width: 960px) {
+    max-width: 900px;
+  }
 }
 
 .accordian-list__item {
@@ -15,7 +19,7 @@
 .toggle {
   + .toggle__label {
     color: var(--color-blue-dark);
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1em;
     width: 100%;
     margin: 0;
@@ -38,6 +42,10 @@
   &:focus + .toggle__label {
     color: var(--color-paper);
     background-color: var(--color-blue-dark);
+
+    .toggle__icon {
+      max-width: 3rem;
+    }
   }
 
   &:checked + .toggle__label {
@@ -50,8 +58,13 @@
       height: auto;
       max-height: 100vh;
       background-color: var(--color-blue-dark);
-      padding: 4em 2rem;
-      margin: 2rem;
+      padding: 0;
+      margin: 1rem 0;
+
+      @media(min-width: 768px) {
+        padding: 4em 2rem;
+        margin: 2rem;
+      }
     }
   }
 }
@@ -62,8 +75,12 @@
   max-height: 0;
   overflow: hidden;
   transition: all .4s ease;
-  border-radius: 4rem;
+  border-radius: 1rem;
   padding: 0 4rem;
+
+  @media(min-width: 768px) {
+    border-radius: 4rem;
+  }
 
   p {
     font-size: 1.2rem;
@@ -74,16 +91,28 @@
 
 .toggle__container--wrapper {
   width: 101%;
-  max-height: calc(600px - 2rem);
+  max-height: calc(100vh - 2rem);
   overflow-y: scroll;
-  padding: 0 2rem;
+  padding: 0 1rem;
+
+  @media (min-width: 768px) {
+    max-width: 101%;
+    max-height: calc(600px - 2rem);
+    padding: 0 2rem;
+  }
 }
 
 .toggle__icon {
   @extend %fa-icon;
   @extend .fas;
   position: absolute;
-  right: 4rem;
+  top: 1rem;
+  right: 1rem;
+
+  @media (min-width: 768px) {
+    top: auto;
+    right: 4rem;
+  }
 
   &:after {
     display: block;
