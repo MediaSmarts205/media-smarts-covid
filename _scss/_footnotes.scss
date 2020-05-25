@@ -1,11 +1,7 @@
 .footnote {
+  margin: 2rem 0;
   :target {
     background-color: var(--color-yellow);
-  }
-
-  @media (min-width: 768px) {
-    position: absolute;
-    bottom: 1rem;
   }
 }
 

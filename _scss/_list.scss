@@ -55,7 +55,7 @@
 .menu-container {
   @media(min-width: 1200px) {
     position: absolute;
-    max-height: 200px;
+    max-height: 320px;
     height: 100%;
     max-width: 100%;
     bottom: -2rem;
@@ -158,12 +158,14 @@ dl {
 
 dt {
   font-size: 1.4rem;
+  line-height: 1.55em;
   margin: 0 0 1rem;
   padding: 0;
 }
 
 dd {
   font-size: 1.2rem;
+  line-height: 1.55em;
   margin: 0 0 2rem;
   padding: 0;
 }

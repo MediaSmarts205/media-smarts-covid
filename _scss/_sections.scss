@@ -30,7 +30,7 @@
     max-width: 100%;
 
     @media (min-width: 1200px) {
-      max-width: 70ch;
+      max-width: 80ch;
       padding: 6rem 2rem 0 2rem;
       z-index: +1;
       background: none;
@@ -610,25 +610,34 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-
-    background-image: url('../assets/exports/what-can-i-do-background.png');
-    background-size: auto 400px;
-    background-repeat: no-repeat;
     background-color: var(--color-blue);
     width: 100%;
 
+    @media(min-width: 768px) {
+      background-image: url('../assets/exports/what-can-i-do-background.png');
+      background-size: auto 400px;
+      background-repeat: no-repeat;
+    }
+
     .component__block--left {
-      max-width: 60%;
-      padding-left: 16rem;
+      overflow: scroll;
+      @media(min-width: 768px) {
+        max-width: 60%;
+        padding-left: 16rem;
+      }
 
       .h2 {
-        font-size: 3.5rem;
+        font-size: 2rem;
         line-height: 1em;
         font-weight: 900;
         color: var(--color-paper);
         text-transform: uppercase;
         text-align: left;
         margin: 0;
+
+        @media(min-width: 768px) {
+          font-size: 3.5rem;
+        }
       }
 
       p {
@@ -641,7 +650,9 @@
 
     .component__block--right {
       color: var(--color-paper);
-      max-width: 40%;
+      @media(min-width: 768px) {
+        max-width: 40%;
+      }
 
       .h3 {
         font-size: 1.2rem;
@@ -665,8 +676,12 @@
 
     .component__block--left {
       width: 100%;
-      max-width: 50%;
-      padding: 2rem;
+      padding: 1rem;
+
+      @media(min-width: 768px) {
+        max-width: 50%;
+        padding: 2rem;
+      }
 
       p {
         font-size: 1rem;
@@ -676,8 +691,12 @@
 
     .component__block--right {
       width: 100%;
-      max-width: 50%;
-      padding: 2rem;
+      padding: 1rem;
+
+      @media(min-width: 768px) {
+        max-width: 50%;
+        padding: 2rem;
+      }
 
       p {
         font-size: 1rem;
@@ -688,21 +707,28 @@
 }
 
 #popup-search-engine {
-  background-image: url('../assets/exports/search-engine-background.png');
-  background-size: auto 600px;
-  background-position: bottom left;
-  background-repeat: no-repeat;
+  @media(min-width: 768px) {
+    background-image: url('../assets/exports/search-engine-background.png');
+    background-size: auto 600px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+  }
+
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
 
   .h2 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 900;
     line-height: 1em;
     text-transform: uppercase;
     color: var(--color-purple);
+
+    @media(min-width: 768px) {
+      font-size: 3rem;
+    }
   }
 
   h3 {
@@ -749,10 +775,13 @@
     width: 101%;
     height: 100vh;
     overflow-y: scroll;
-    background-image: url('../assets/exports/deep-dive-background.png');
-    background-size: 100% auto;
-    background-position: top left;
-    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      background-image: url('../assets/exports/deep-dive-background.png');
+      background-size: 100% auto;
+      background-position: top left;
+      background-repeat: no-repeat;
+    }
 
     .title {
       @extend .h1;
@@ -760,10 +789,14 @@
       font-size: 3rem;
       font-weight: 900;
       line-height: 1em;
-      color: var(--color-paper);
+      color: var(--color-blue);
       text-transform: uppercase;
       text-align: left;
       margin: 0;
+
+      @media (min-width: 768px) {
+        color: var(--color-paper);
+      }
 
       @media (min-width: 1200px) {
         font-size: 5rem;
@@ -854,7 +887,7 @@
       font-weight: 200;
       line-height: 1.5em;
       text-align: left;
-      margin: 0;
+      margin: 0 0 1rem;
       max-width: 240px;
 
       .fr & {
