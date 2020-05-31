@@ -59,7 +59,6 @@
     height: 100%;
     max-width: 100%;
     bottom: -2rem;
-    overflow: hidden;
     padding-top: 10rem;
     z-index: map-get($z-index, footer);
 
@@ -100,16 +99,53 @@
   &:checked + .toggle-menu__label {
     color: var(--color-purple);
 
+    .toggle__lable__text {
+      &:before {
+        @extend %fa-icon;
+        @extend .fas;
+        content: fa-content($fa-var-times-circle);
+        color: var(--color-paper);
+        font-size: 2rem;
+
+        position: fixed;
+        z-index: 99999999;
+        top: 1rem;
+        right: 1rem;
+
+        @media (min-width: 768px) {
+          position: absolute;
+          top: auto;
+          right: 1rem;
+          bottom: calc(240px + 2rem);
+          left: auto;
+        }
+      }
+    }
+
     + .toggle-menu__content {
-      height: 180px;
-      width: 320px;
-      bottom: 50px;
-      padding: 0 1rem;
+      position: fixed;
+      height: 100vh;
       max-height: none;
+      width: 100vw;
+      left:0;
+      bottom: 0;
+      padding: 0 1rem;
       background-color: var(--color-blue-light);
       -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+
+      @media (min-width: 768px) {
+        position: absolute;
+        padding: 1rem;
+        min-width: 320px;
+        height: calc(240px + 2rem);
+        top: auto;
+        right: 0;
+        bottom: 3rem;
+        left: auto;
+        border-radius: 2rem;
+      }
     }
   }
 }
@@ -128,16 +164,26 @@
   max-height: 0;
   overflow: hidden;
   position: absolute;
-  border-radius: 2rem;
 
   li {
-    margin: 0.25rem;
+    margin: 0.5rem;
   }
 
   a {
     font-size: 1rem;
     color: var(--color-paper);
     transition: all .4s ease;
+    padding: 0;
+    line-height: 1.5rem;
+    display: flex;
+
+    &:before {
+      @extend %fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-link);
+      display: inline-block;
+      margin-right: 1rem;
+    }
 
     &:focus,
     &:hover {

@@ -8,7 +8,10 @@
   height: auto;
 
   @media(min-width: 768px) {
-    padding: 0;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
   }
 
   @media (min-width: 1200px) {
@@ -28,6 +31,11 @@
     background-color: var(--color-blue);
     width: 100%;
     max-width: 100%;
+
+    @media (min-width: 768px) {
+      max-width: 55%;
+      align-items: flex-start;
+    }
 
     @media (min-width: 1200px) {
       max-width: 80ch;
@@ -63,6 +71,11 @@
       font-size: 1.25rem;
       line-height: 1.25em;
       font-weight: 500;
+      font-family: $font-body;
+
+      strong {
+        font-family: $font-display;
+      }
     }
 
     @media (min-width: 768px) {
@@ -82,6 +95,16 @@
     justify-content: center;
     width: 100%;
     position: relative;
+
+    // @media(min-width: 768px)and(max-width: 1199px) {
+    //   max-width: 40%;
+    //   overflow: hidden;
+    //
+    //   .responsive-image {
+    //     width: 60vw;
+    //     max-width: none;
+    //   }
+    // }
 
     @media (min-width: 1200px) {
       position: absolute;
@@ -124,7 +147,6 @@
 
       &:hover,
       &:focus {
-        color: var(--color-black);
         img {
           top: 3.5rem;
         }
@@ -159,6 +181,10 @@
     }
   }
 
+ > .component__block {
+   max-width: 1440px;
+ }
+
   #section-check-list {
     flex-flow: column;
     justify-content: center;
@@ -181,7 +207,7 @@
 
       p {
         font-size: 1.4rem;
-        line-height: 1.25em;
+        line-height: 1.6em;
         z-index: +1;
         max-width: 25ch;
         display: inline-block;
@@ -221,7 +247,7 @@
         justify-content: normal;
         align-items: normal;
         flex-flow: row wrap;
-        margin: 0;
+        margin: 0 0 0 5rem;
 
         p {
           margin: 6rem 0 0 20rem;
@@ -277,7 +303,7 @@
         flex-flow: row wrap;
         justify-content: flex-end;
         align-items: flex-start;
-        margin: -10rem 0 0;
+        margin: -10rem 12rem 0 0;
 
         p {
           margin: 23rem 3rem 0 0;
@@ -360,8 +386,8 @@
           height: auto;
           position: relative;
           z-index: -1;
-          top: 20rem;
-          left: 0rem;
+          top: 22rem;
+          left: 3rem;
         }
       }
     }
@@ -385,7 +411,7 @@
         flex-flow: row wrap;
         justify-content: flex-end;
         align-items: flex-start;
-        margin: 0 20rem 0 0;
+        margin: 0 10rem 0 0;
 
         p {
           margin: 20rem 19rem 0 0;
@@ -429,6 +455,7 @@
     font-size: 2rem;
     line-height: 1.25em;
     font-weight: 200;
+    margin: 3rem 0 2rem;
 
     @media(min-width: 640px) {
       font-size: 3.5rem;
@@ -457,6 +484,7 @@
     font-size: 2rem;
     line-height: 1.25em;
     font-weight: 200;
+    margin: 3rem 0 2rem;
 
     @media(min-width: 640px) {
       font-size: 3.5rem;
@@ -489,6 +517,7 @@
 
     @media(min-width: 768px) {
       font-size: 3.5rem;
+      margin: 3rem 0 2rem;
     }
   }
 
@@ -637,11 +666,13 @@
 }
 
 #popup-what-can-i-do {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 
   #popup-what-can-i-do__pt-1 {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column;
     align-items: center;
     padding: 2rem;
     background-color: var(--color-blue);
@@ -653,11 +684,36 @@
       background-repeat: no-repeat;
     }
 
+    .wrapper {
+      width: 100%;
+      max-width: 1280px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: 768px) {
+        flex-flow: column;
+        align-items: flex-end;
+      }
+
+      @media(min-width: 1200px) {
+        flex-flow: row wrap;
+        align-items: center;
+      }
+    }
+
     .component__block--left {
       overflow: scroll;
+
       @media(min-width: 768px) {
-        max-width: 60%;
-        padding-left: 16rem;
+        width: 100%;
+        width: 70%;
+        padding: 2rem;
+      }
+
+      @media(min-width: 1200px) {
+        max-width: 50%;
       }
 
       .h2 {
@@ -684,8 +740,15 @@
 
     .component__block--right {
       color: var(--color-paper);
+
       @media(min-width: 768px) {
-        max-width: 40%;
+        width: 100%;
+        width: 70%;
+        padding: 2rem;
+      }
+
+      @media(min-width: 1200px) {
+        max-width: 50%;
       }
 
       .h3 {
@@ -703,6 +766,8 @@
   #popup-what-can-i-do__pt-2 {
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
+    max-width: 1280px;
 
     .h3 {
       font-size: 1.2rem;
@@ -741,17 +806,24 @@
 }
 
 #popup-search-engine {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
   @media(min-width: 768px) {
     background-image: url('../assets/exports/search-engine-background.png');
     background-size: auto 600px;
     background-position: bottom left;
     background-repeat: no-repeat;
+    justify-content: flex-start;
+    padding-top: 4rem;
   }
 
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  @media(min-width: 960px) {
+    justify-content: center;
+    padding-top: 0;
+  }
 
   .h2 {
     font-size: 1.8rem;
@@ -812,9 +884,14 @@
 
     @media (min-width: 768px) {
       background-image: url('../assets/exports/deep-dive-background.png');
-      background-size: 100% auto;
-      background-position: top left;
+      background-size: auto 100%;
+      background-position: 32% 0;
       background-repeat: no-repeat;
+    }
+
+    @media(min-width: 960px) {
+      background-size: 110% auto;
+      background-position: left top;
     }
 
     .title {
@@ -858,6 +935,14 @@
 
   .popup-deep-dive__section-intro {
     margin: 15% 0 0 15%;
+
+    @media(min-width: 768px) {
+      margin-top: 36%;
+    }
+
+    @media(min-width: 960px) {
+      margin-top: 15%;
+    }
   }
 
   .popup-deep-dive__section-content {

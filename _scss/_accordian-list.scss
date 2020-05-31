@@ -19,7 +19,7 @@
 .toggle {
   + .toggle__label {
     color: var(--color-blue-dark);
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1em;
     width: 100%;
     margin: 0;
@@ -84,7 +84,7 @@
 
   p {
     font-size: 1.2rem;
-    line-height: 1.25em;
+    line-height: 1.5em;
     max-width: 58ch;
   }
 }
