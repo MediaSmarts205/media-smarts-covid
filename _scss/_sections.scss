@@ -19,7 +19,8 @@
     flex-flow: row wrap;
     justify-content: flex-end;
     overflow: hidden;
-    min-height: 900px;
+    min-height: 1100px;
+    background-color: var(--color-paper);
   }
 
   #section-intro-1 {
@@ -88,6 +89,7 @@
       }
       .h2 {
         font-size: 2rem;
+        margin-top: 0
       }
     }
   }
@@ -95,29 +97,27 @@
   #section-intro-2 {
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     position: relative;
 
-    // @media(min-width: 768px)and(max-width: 1199px) {
-    //   max-width: 40%;
-    //   overflow: hidden;
-    //
-    //   .responsive-image {
-    //     width: 60vw;
-    //     max-width: none;
-    //   }
-    // }
+    @media(min-width: 768px)and(max-width: 1199px) {
+      max-width: 40%;
+      overflow: hidden;
+
+      .responsive-image {
+        width: 60vw;
+        max-width: none;
+      }
+    }
 
     @media (min-width: 1200px) {
       position: absolute;
-      top: -4rem;
-      left: -25%;
+      top: 0;
+      left: 0;
 
       .responsive-image {
-        width: auto;
-        height: 100%;
         max-width: none;
       }
     }
