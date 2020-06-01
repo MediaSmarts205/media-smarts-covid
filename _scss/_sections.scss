@@ -57,6 +57,10 @@
     .h1,
     .h2 {
       width: 80%;
+
+      .fr & {
+        width: 100%;
+      }
     }
 
     .h1 {
@@ -212,6 +216,10 @@
         max-width: 25ch;
         display: inline-block;
 
+        .fr & {
+          max-width: 34ch;
+        }
+
         strong {
           font-family: $font-display;
           font-size: 4rem;
@@ -229,6 +237,12 @@
             margin-bottom: 1rem;
           }
         }
+      }
+    }
+
+    .fr & {
+      .text-break {
+        display: inline;
       }
     }
 
@@ -502,7 +516,7 @@
   background-color: var(--color-paper);
   background-image: none;
   background-repeat: no-repeat;
-  background-position: center 1rem;
+  background-position: center -5rem;
   height: auto;
   position: relative;
 
@@ -850,6 +864,7 @@
   }
 
   .component__block {
+    max-width: 1024px;
     display: flex;
     flex-flow: column;
     justify-content: center;

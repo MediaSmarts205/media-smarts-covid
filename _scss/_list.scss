@@ -44,7 +44,6 @@
 .list--menu {
   display: flex;
   position: relative;
-  z-index: map-get($z-index, navigation);
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -60,19 +59,6 @@
     max-width: 100%;
     bottom: -2rem;
     padding-top: 10rem;
-    z-index: map-get($z-index, footer);
-
-    &:after {
-      content: "";
-      position: absolute;
-      background-color: var(--color-paper);
-      width: 200vw;
-      height: 100vw;
-      border-radius: 50%;
-      display: block;
-      top: 8rem;
-      left: -50vw;
-    }
   }
 }
 
@@ -134,6 +120,7 @@
       -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
+      z-index: map-get($z-index, modal);
 
       @media (min-width: 768px) {
         position: absolute;

@@ -312,6 +312,10 @@ input + label {
   color: var(--color-paper);
 }
 
+.layer--navigation {
+  z-index: map-get($z-index, navigation);
+}
+
 .text-light {
   font-weight: 200;
 }
