@@ -173,6 +173,11 @@
   min-height: calc(100vh - 2rem);
   height: auto;
 
+  background-image: url('../assets/exports/footnote-background.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100vw auto;
+
   .h2 {
     font-size: 4em;
     font-weight: 900;
@@ -718,7 +723,6 @@
     }
 
     .component__block--left {
-      overflow: scroll;
 
       @media(min-width: 768px) {
         width: 100%;
