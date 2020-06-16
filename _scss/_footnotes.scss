@@ -2,10 +2,6 @@
   margin: 4rem 0;
   position: relative;
 
-  :target {
-    background-color: var(--color-yellow);
-  }
-
   &:before {
     @extend %fa-icon;
     @extend .far;
@@ -19,7 +15,7 @@
 
 .footnote-title {
   font-family: $font-display;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   padding: 0 1rem;
 }
@@ -35,7 +31,8 @@
   }
 
   p {
-    font-size: 0.8rem;
+    font-family: $font-body;
+    font-size: 1rem;
     max-width: 55ch;
   }
 }
