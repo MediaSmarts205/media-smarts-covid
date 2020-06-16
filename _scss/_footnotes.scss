@@ -12,7 +12,7 @@
     font-size: 8rem;
     content: fa-content($fa-var-check-circle);
     position: absolute;
-    left: -10rem;
+    left: -9rem;
     top: 0;
   }
 }
@@ -21,15 +21,17 @@
   font-family: $font-display;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  padding: 0 1rem;
 }
 
 .footnote-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 55ch;
 
   .footnote-list__item {
-    padding: 0;
+    padding: 1rem;
   }
 
   p {
