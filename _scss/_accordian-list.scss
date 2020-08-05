@@ -18,14 +18,14 @@
 
 .toggle {
   + .toggle__label {
-    color: var(--color-blue-dark);
+    color: $color-blue-dark;
     font-size: 2rem;
     line-height: 1em;
     width: 100%;
     margin: 0;
     transition: all .4s ease;
 
-    background-color: var(--color-paper);
+    background-color: $color-paper;
     border-radius: 1rem;
     padding: 1rem;
     -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
@@ -40,8 +40,8 @@
 
   &:hover + .toggle__label,
   &:focus + .toggle__label {
-    color: var(--color-paper);
-    background-color: var(--color-blue-dark);
+    color: $color-paper;
+    background-color: $color-blue-dark;
 
     .toggle__icon {
       max-width: 3rem;
@@ -57,7 +57,7 @@
     + .toggle__container {
       height: auto;
       max-height: 100vh;
-      background-color: var(--color-blue-dark);
+      background-color: $color-blue-dark;
       padding: 0;
       margin: 1rem 0;
 

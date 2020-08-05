@@ -20,7 +20,7 @@
     padding: 4rem;
     border-radius: 2rem;
     margin: 2rem;
-    background: var(--color-paper);
+    background: $color-paper;
     -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
     -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
     box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
@@ -43,14 +43,14 @@
   &:hover + .popup__toggle-label,
   &:focus + .popup__toggle-label {
     .popup__icon {
-      color: var(--color-blue);
+      color: $color-blue;
     }
   }
 
 
   &:checked + .popup__toggle-label {
     .popup__icon {
-      color: var(--color-paper);
+      color: $color-paper;
       position: fixed;
       top: 1rem;
       right: 1rem;
@@ -63,7 +63,7 @@
       }
 
       &.popup__icon--bg-white {
-        color: var(--color-black);
+        color: $color-black;
       }
 
       &:after {
@@ -84,7 +84,7 @@
       position: fixed;
       z-index: map-get($z-index, modal);
       top: 0;
-      background-color: var(--color-paper);
+      background-color: $color-paper;
       -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
@@ -109,7 +109,7 @@
 .popup__icon {
   @extend %fa-icon;
   @extend .fas;
-  color: var(--color-green);
+  color: $color-green;
 
   &:after {
     margin-top: 2rem;

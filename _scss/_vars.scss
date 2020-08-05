@@ -5,22 +5,20 @@ $padding: 2rem;
 
 
 // colours
-:root {
-  --color-blue-light: #00BDF2;
-  --color-blue: #6099FC;
-  --color-blue-dark: #426AB3;
-  --color-paper: #fff;
-  --color-yellow: #FCAF17;
-  --color-black: #000;
-  --color-green: #99CA3C;
-  --color-purple: #B35FA6;
-}
+$color-blue-light: #00BDF2;
+$color-blue: #6099FC;
+$color-blue-dark: #426AB3;
+$color-paper: #fff;
+$color-yellow: #FCAF17;
+$color-black: #000;
+$color-green: #99CA3C;
+$color-purple: #B35FA6;
 
 // fontawesome
 $fa-font-path: "../assets/fontawesome-free-5.13.0-web/webfonts";
 
 // fontfamily
-$font-display: Arial Black, Arial Bold, Gadget, sans-serif; 
+$font-display: Arial Black, Arial Bold, Gadget, sans-serif;
 $font-body: Arial, Helvetica, sans-serif;
 
 $z-index: (

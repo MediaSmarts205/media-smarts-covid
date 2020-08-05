@@ -69,11 +69,11 @@
 
 .menu__item__link {
   background: none;
-  color: var(--color-blue-dark);
+  color: $color-blue-dark;
 
   &:hover,
   &:focus {
-    color: var(--color-purple);
+    color: $color-purple;
     img {
       -webkit-filter: grayscale(1);
       filter: grayscale(1);
@@ -83,14 +83,14 @@
 
 .toggle-menu {
   &:checked + .toggle-menu__label {
-    color: var(--color-purple);
+    color: $color-purple;
 
     .toggle__lable__text {
       &:before {
         @extend %fa-icon;
         @extend .fas;
         content: fa-content($fa-var-times-circle);
-        color: var(--color-paper);
+        color: $color-paper;
         font-size: 2rem;
 
         position: fixed;
@@ -116,7 +116,7 @@
       left:0;
       bottom: 0;
       padding: 0 1rem;
-      background-color: var(--color-blue-light);
+      background-color: $color-blue-light;
       -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
       box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
@@ -158,7 +158,7 @@
 
   a {
     font-size: 1rem;
-    color: var(--color-paper);
+    color: $color-paper;
     transition: all .4s ease;
     padding: 0;
     line-height: 1.5rem;

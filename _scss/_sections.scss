@@ -2,7 +2,7 @@
 #section-intro {
   width: 100%;
   flex-flow: column;
-  background-color: var(--color-blue);
+  background-color: $color-blue;
   position: relative;
   padding: 1rem;
   height: auto;
@@ -20,7 +20,7 @@
     justify-content: flex-end;
     overflow: hidden;
     min-height: 1100px;
-    background-color: var(--color-blue);
+    background-color: $color-blue;
   }
 
   #section-intro-1 {
@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: var(--color-blue);
+    background-color: $color-blue;
     width: 100%;
     max-width: 100%;
 
@@ -66,7 +66,7 @@
 
     .h1 {
       text-transform: uppercase;
-      color: var(--color-paper);
+      color: $color-paper;
       font-weight: 900;
       font-size: 2rem;
       line-height: 1.125em;
@@ -133,7 +133,7 @@
     z-index: +1;
 
     .link {
-      color: var(--color-paper);
+      color: $color-paper;
       font-size: 1.2rem;
       font-weight: 900;
       line-height: 1.5rem;
@@ -494,8 +494,8 @@
 #section-bad-info {
   flex-flow: column;
   align-items: center;
-  color: var(--color-paper);
-  background-color: var(--color-blue);
+  color: $color-paper;
+  background-color: $color-blue;
   background-image: url(../assets/exports/passing-virus-background.png);
   height: auto;
 
@@ -517,8 +517,8 @@
   flex-flow: column;
   align-items: center;
   min-height: 900px;
-  color: var(--color-black);
-  background-color: var(--color-paper);
+  color: $color-black;
+  background-color: $color-paper;
   background-image: none;
   background-repeat: no-repeat;
   background-position: center -5rem;
@@ -558,7 +558,7 @@
 
 .footer {
   position: relative;
-  background-color: var(--color-paper);
+  background-color: $color-paper;
   z-index: map-get($z-index, footer);
   padding: 6rem 2rem 0;
 
@@ -595,7 +595,7 @@
   }
 
   .h1 {
-    color: var(--color-paper);
+    color: $color-paper;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
@@ -633,7 +633,7 @@
   }
 
   .component__block--right {
-    background-color: var(--color-paper);
+    background-color: $color-paper;
   }
 }
 
@@ -656,7 +656,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
-    color: var(--color-purple);
+    color: $color-purple;
 
     @media(min-width: 768px) {
       font-size: 4.5rem;
@@ -694,7 +694,7 @@
     flex-flow: column;
     align-items: center;
     padding: 2rem;
-    background-color: var(--color-blue);
+    background-color: $color-blue;
     width: 100%;
 
     @media(min-width: 768px) {
@@ -738,7 +738,7 @@
         font-size: 2rem;
         line-height: 1em;
         font-weight: 900;
-        color: var(--color-paper);
+        color: $color-paper;
         text-transform: uppercase;
         text-align: left;
         margin: 0;
@@ -749,7 +749,7 @@
       }
 
       p {
-        color: var(--color-paper);
+        color: $color-paper;
         font-size: 1.2rem;
         max-width: 42ch;
         margin-top: 0;
@@ -757,7 +757,7 @@
     }
 
     .component__block--right {
-      color: var(--color-paper);
+      color: $color-paper;
 
       @media(min-width: 768px) {
         width: 100%;
@@ -848,7 +848,7 @@
     font-weight: 900;
     line-height: 1em;
     text-transform: uppercase;
-    color: var(--color-purple);
+    color: $color-purple;
 
     @media(min-width: 768px) {
       font-size: 3rem;
@@ -919,13 +919,13 @@
       font-size: 3rem;
       font-weight: 900;
       line-height: 1em;
-      color: var(--color-blue);
+      color: $color-blue;
       text-transform: uppercase;
       text-align: left;
       margin: 0;
 
       @media (min-width: 768px) {
-        color: var(--color-paper);
+        color: $color-paper;
       }
 
       @media (min-width: 1200px) {
@@ -965,7 +965,7 @@
   }
 
   .popup-deep-dive__section-content {
-    background-color: var(--color-paper);
+    background-color: $color-paper;
     padding: 1rem 8rem 4rem;
     margin-top: -2rem;
   }
@@ -1011,13 +1011,13 @@
       font-size: 3rem;
       font-weight: 900;
       line-height: 1em;
-      color: var(--color-blue);
+      color: $color-blue;
       text-transform: uppercase;
       text-align: left;
       margin: 0;
 
       @media (min-width: 1200px) {
-        color: var(--color-paper);
+        color: $color-paper;
       }
 
       .fr & {
@@ -1079,7 +1079,7 @@
         padding: 2rem 6rem 2rem 4rem;
         margin-left: 15%;
 
-        background: var(--color-paper);
+        background: $color-paper;
         -webkit-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
         -moz-box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
         box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
