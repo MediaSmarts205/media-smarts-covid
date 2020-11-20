@@ -177,8 +177,8 @@ textarea {
 .link {
   background:
    linear-gradient(
-     to bottom, var(--color-blue-light) 0%,
-     var(--color-blue-light) 100%
+     to bottom, $color-blue-light 0%,
+     $color-blue-light 100%
    );
   background-position: 0 100%;
   background-repeat: repeat-x;
