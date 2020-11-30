@@ -26,8 +26,24 @@
     box-shadow: 0 16px 16px -8px rgba(0,0,0,0.5);
   }
 
-  @media(min-width: 1200px) {
+  @media(min-width: 1700px) {
     margin: 0 2rem;
+  }
+}
+
+a.popup__link {
+  text-decoration: none;
+  color: $color-black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .popup__toggle-label {
+    padding-top: 1rem;
+
+    .text-break {
+      display: block;
+    }
   }
 }
 
